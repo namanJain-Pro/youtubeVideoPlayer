@@ -30,12 +30,7 @@ public class YoutubeActivity extends YouTubeBaseActivity
     @Override
     public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean wasRestored) {
 
-        if(!wasRestored) {
-            youTubePlayer.cueVideo(YoutubeConfig.getYoutubeVideoId());
-        } else {
-            youTubePlayer.loadVideo(YoutubeConfig.getYoutubeVideoId());
-        }
-
+        youTubePlayer.loadVideo(YoutubeConfig.getYoutubeVideoId());
         youTubePlayer.play();
 
     }

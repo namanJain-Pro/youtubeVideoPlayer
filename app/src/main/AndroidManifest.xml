@@ -17,14 +17,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.YoutubeCopy">
-        <activity android:name=".YoutubePlaylistActivity"
-                  android:label="Youtube Playlist"/>
-        <activity
-            android:name=".YoutubeActivity"
-            android:label="Youtube Video" />
+        <activity android:name=".YoutubePlaylistActivity" />
+        <activity android:name=".YoutubeActivity"/>
         <activity
             android:name=".MainActivity"
-            android:label="Youtube Main">
+            android:label="YT Video Player">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
