@@ -6,48 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/videoLabel"
+    <Button
+        android:id="@+id/youtubeVideo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="Video"
-        android:textSize="16sp"
-        android:textStyle="bold"
+        android:layout_marginTop="128dp"
+        android:text="Play Youtube Video"
+        app:layout_constraintBottom_toTopOf="@+id/youtubePlaylist"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <view
-        android:id="@+id/youtubeVideoThumbnail"
-        class="com.google.android.youtube.player.YouTubeThumbnailView"
-        android:layout_width="0dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/videoLabel"
-        app:layout_constraintTop_toBottomOf="@+id/videoLabel" />
-
-    <TextView
-        android:id="@+id/playlistLabel"
+    <Button
+        android:id="@+id/youtubePlaylist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Playlist"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/youtubeVideoThumbnail"
-        app:layout_constraintTop_toBottomOf="@+id/youtubeVideoThumbnail" />
-
-    <view
-        android:id="@+id/youtubePlaylistThumbnail"
-        class="com.google.android.youtube.player.YouTubeThumbnailView"
-        android:layout_width="0dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="256dp"
+        android:text="Play Youtube Playlist"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/playlistLabel"
-        app:layout_constraintTop_toBottomOf="@+id/playlistLabel" />
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
