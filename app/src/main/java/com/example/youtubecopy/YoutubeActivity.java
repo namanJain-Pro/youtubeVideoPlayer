@@ -32,7 +32,11 @@ public class YoutubeActivity extends YouTubeBaseActivity
 
         if(!wasRestored) {
             youTubePlayer.cueVideo(YoutubeConfig.getYoutubeVideoId());
+        } else {
+            youTubePlayer.loadVideo(YoutubeConfig.getYoutubeVideoId());
         }
+
+        youTubePlayer.play();
 
     }
 

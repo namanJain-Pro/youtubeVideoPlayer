@@ -25,7 +25,11 @@ public class YoutubePlaylistActivity extends YouTubeBaseActivity implements YouT
     public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean wasRestored) {
         if (!wasRestored) {
             youTubePlayer.cuePlaylist(YoutubeConfig.getYoutubePlaylistId());
+        } else {
+            youTubePlayer.loadPlaylist(YoutubeConfig.getYoutubePlaylistId());
         }
+
+        youTubePlayer.play();
     }
 
     @Override

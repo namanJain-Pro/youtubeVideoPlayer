@@ -4,24 +4,29 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START" />
+        </intent>
+    </queries>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="Youtube"
+        android:label="YT Video Player"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.YoutubeCopy">
         <activity android:name=".YoutubePlaylistActivity"
-                  android:label="Youtube"/>
+                  android:label="Youtube Playlist"/>
         <activity
             android:name=".YoutubeActivity"
-            android:label="Youtube" />
+            android:label="Youtube Video" />
         <activity
             android:name=".MainActivity"
-            android:label="Youtube">
+            android:label="Youtube Main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
