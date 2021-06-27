@@ -17,8 +17,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.YoutubeCopy">
-        <activity android:name=".YoutubePlaylistActivity" />
-        <activity android:name=".YoutubeActivity"/>
+        <activity android:name=".PlayerActivity"/>
         <activity
             android:name=".MainActivity"
             android:label="YT Video Player">

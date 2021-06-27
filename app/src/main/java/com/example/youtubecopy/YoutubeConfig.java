@@ -3,8 +3,8 @@ package com.example.youtubecopy;
 public class YoutubeConfig {
 
     private static final String GOOGLE_API_KEY = "AIzaSyDJGO8-F33gul-RWyz32Tci4gRu04TbShs";
-    private static final String YOUTUBE_VIDEO_ID = "0njiAvyvvE8";
-    private static final String YOUTUBE_PLAYLIST_ID = "PLDHnEFiZUKKNVFlbQgzHv5GvL2hHwgew5";
+    public static String youtubeVideoID;
+    public static String youtubePlaylistId;
 
     public YoutubeConfig() {
     }
@@ -14,10 +14,14 @@ public class YoutubeConfig {
     }
 
     public static String getYoutubeVideoId() {
-        return YOUTUBE_VIDEO_ID;
+        if (youtubeVideoID.contains("youtube.com")) {
+            return youtubeVideoID.substring(32);
+        } else {
+            return youtubeVideoID.substring(17);
+        }
     }
 
     public static String getYoutubePlaylistId() {
-        return YOUTUBE_PLAYLIST_ID;
+        return youtubePlaylistId.substring(34);
     }
 }
